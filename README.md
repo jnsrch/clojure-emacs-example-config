@@ -5,7 +5,6 @@ This personal repository adds the following:
 * My own user-customizations.el file. This file is the upstream repo's starting point for your own customizations that lay on top of the original example-config from clojure-emacs.
 * One particular tool, the undo-tree, requires an extra .el script, and it is placed in a directory called `hellofunk-config` to isolate it from the other .el scripts that are a part of the original upstream repo at clojure-emacs. If you aren't interested in this feature, you can exclude this directory and remove the relevant installation line from the user-customizations.el file (near the bottom of the file).
 * View all customizations, with comments about their usage and links to their home pages, in this repo's [user-customizations.el file](https://github.com/hellofunk/example-config/blob/master/user-customizations.el).
-* This repo also checks in the downloaded Melpa packages, which appear in the elpa/ directory. The upstream emacs config will automatically download these anyway when you first run emacs, so this directory is not necessary, but since I push my own emacs setup back to this repo, I chose to include it anyway as a backup.
 
  *All other settings in this config are part of the upstream repo from clojure-emacs.*
 

@@ -16,6 +16,11 @@
 ;sets the auto-save directory to be other than project directories, so you aren't inundated with tons of backup files
 (setq backup-directory-alist `(("." . "~/.saves")))
 
+;winner mode
+;from: http://www.emacswiki.org/emacs/WinnerMode
+(when (fboundp 'winner-mode)
+      (winner-mode 1))
+
 ;adds color matching for open and closed parenthesis
 ;from https://github.com/Fanael/rainbow-delimiters
 (require-package 'rainbow-delimiters)
@@ -94,7 +99,7 @@
 (setq org-log-done t)
 
 
-;erc configurations, for using irc. if using this, change the username from hellofunk to whatever you use
+;erc configurations, for using irc. if using this, change the username from to whatever you use
 (setq erc-nick "your-irc-username")
 ;http://www.emacswiki.org/emacs/ErcLogging
 ;choose any directory on your computer for placing log files

@@ -1,4 +1,4 @@
-This is my own personal emacs setup which is 100% compatible with the official [clojure-emacs/example-config](https://github.com/clojure-emacs/example-config) repository, which provides a minimal working emacs configuration for Clojure/Clojurescript development, with all the latest features from the clojure-emacs team.  
+This Clojure-dominated emacs setup contains most of the configuration I use personally, and it is 100% compatible with the official [clojure-emacs/example-config](https://github.com/clojure-emacs/example-config) repository, which provides a minimal working emacs configuration for Clojure/Clojurescript development, with all the latest features from the clojure-emacs team.  
 
 This personal repository adds the following:
 

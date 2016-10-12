@@ -30,7 +30,7 @@
 ;be kind to your eyes, solarize! hey, that rhymes!
 ;from https://github.com/bbatsov/solarized-emacs
 (require-package 'solarized-theme)
-(require 'solarized-light-theme)
+(require 'solarized-dark-theme)
 (provide 'solarized-theme)
 
 ;use ido-mode, a must-have for quick emacs navigation
@@ -137,3 +137,16 @@
   (setq mac-command-modifier 'control)
   ;(global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
 )
+
+(add-hook 'cider-mode-hook
+   '(lambda () (add-hook 'after-save-hook
+    '(lambda ()
+       (if (and (boundp 'cider-mode) cider-mode)
+    (cider-namespace-refresh)
+         )))))
+ 
+(defun cider-namespace-refresh ()
+  (interactive)
+  (cider-interactive-eval
+   "(require 'clojure.tools.namespace.repl)
+  (clojure.tools.namespace.repl/refresh)"))
